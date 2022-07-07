@@ -38,6 +38,19 @@ img {
   border: none;
   font-family: "Museo Sans Bold", sans serif;
   font-weight: 700;
+  cursor: pointer;
+  padding: 18px 47px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #ffe466;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
 .header {
@@ -171,6 +184,9 @@ img {
   align-items: center;
   margin-bottom: 20px;
 }
+.main-list__item:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 640px) {
   .main-list__item {
     margin-bottom: 15px;
@@ -186,4 +202,85 @@ img {
   justify-content: center;
   align-items: center;
   margin-right: 30px;
+}
+
+.offer {
+  padding: 90px 0;
+  background: url("../img/offer-bg.jpg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+}
+@media (max-width: 640px) {
+  .offer {
+    background: #fff;
+  }
+}
+.offer:before {
+  content: "";
+  top: 0;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background-color: #fff;
+  position: absolute;
+}
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+@media (max-width: 640px) {
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.offer-title {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: "Museo Sans Bold", sans serif;
+  font-weight: 700;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+.offer-subtitle {
+  display: inline-block;
+  font-size: 16px;
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+.offer__input {
+  margin-bottom: 30px;
+  width: 230px;
+}
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+.offer__input:first-child {
+  margin-right: 10px;
+}
+.offer__button {
+  width: 99%;
+  min-height: 70px;
+}
+@media (max-width: 1200px) {
+  .offer__button {
+    font-size: 13px;
+    width: 90%;
+  }
+}
+@media (max-width: 640px) {
+  .offer__button {
+    font-size: 16px;
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
