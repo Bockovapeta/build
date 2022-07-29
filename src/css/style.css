@@ -823,4 +823,9 @@ body {
 }
 .form__description {
   font-size: 15px;
+}
+
+.error {
+  border: 2px solid red;
+  background: rgba(255, 142, 142, 0.7137254902);
 }/*# sourceMappingURL=style.css.map */
